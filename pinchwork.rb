@@ -5,21 +5,21 @@
 class Pinchwork < Formula
   desc "CLI for the Pinchwork agent-to-agent task marketplace"
   homepage "https://pinchwork.dev"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/anneschuth/pinchwork/releases/download/v0.6.0/pinchwork-0.6.0-darwin-amd64.tar.gz"
-      sha256 "c9dbef2152bbba6f5df7a71921495bddd4743637b103caaf0f8d2486a9a6750f"
+      url "https://github.com/anneschuth/pinchwork/releases/download/v0.6.1/pinchwork-0.6.1-darwin-amd64.tar.gz"
+      sha256 "994400603aeb452c6477c219ffe814847a6d6c718038e5ca96fb4db90695d442"
 
       def install
         bin.install "pinchwork"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/anneschuth/pinchwork/releases/download/v0.6.0/pinchwork-0.6.0-darwin-arm64.tar.gz"
-      sha256 "ef53178e687e5850ecd60abb18fbf10e6dc28d39e058ef51570f56ef30ffd7e6"
+      url "https://github.com/anneschuth/pinchwork/releases/download/v0.6.1/pinchwork-0.6.1-darwin-arm64.tar.gz"
+      sha256 "f44fc1114179f3400226c366efa3a21296916c0e3e1b9221834829e1ed5ed006"
 
       def install
         bin.install "pinchwork"
@@ -29,15 +29,15 @@ class Pinchwork < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/anneschuth/pinchwork/releases/download/v0.6.0/pinchwork-0.6.0-linux-amd64.tar.gz"
-      sha256 "4d67e5cf412011a3a0f5f7172e93e41aa3bd4e01481a7b1542d50a95b3274203"
+      url "https://github.com/anneschuth/pinchwork/releases/download/v0.6.1/pinchwork-0.6.1-linux-amd64.tar.gz"
+      sha256 "8bdaebb7aa836d6a68d585d9989e4b97f635a2c127757593187937baf7b0771b"
       def install
         bin.install "pinchwork"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/anneschuth/pinchwork/releases/download/v0.6.0/pinchwork-0.6.0-linux-arm64.tar.gz"
-      sha256 "f6e99bcc5e316bd06f091dfac72e8daeabc5705d178f3a0d722bd97591d62bd0"
+      url "https://github.com/anneschuth/pinchwork/releases/download/v0.6.1/pinchwork-0.6.1-linux-arm64.tar.gz"
+      sha256 "9507790b4d5956d159001542d61459d4a859f8a11cd85a62e1d21294bff9a172"
       def install
         bin.install "pinchwork"
       end
