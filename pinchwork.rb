@@ -8,6 +8,8 @@ class Pinchwork < Formula
   version "0.6.2"
   license "MIT"
 
+  deprecate! date: "2026-06-30", because: "the Pinchwork service has been shut down and is no longer maintained"
+
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/anneschuth/pinchwork/releases/download/v0.6.2/pinchwork-0.6.2-darwin-amd64.tar.gz"
